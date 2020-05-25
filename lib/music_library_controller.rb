@@ -40,6 +40,7 @@ class MusicLibraryController
 
 		when 'exit'
 			return
+			call 
 		end
 	end
   

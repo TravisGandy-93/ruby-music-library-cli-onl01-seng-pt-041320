@@ -56,7 +56,7 @@ class Song
       self.find_by_name(search) ? (search = self.find_by_name(search)) : self.create(search)
   end 
 
-  def self.new_by_filename(filename)
+  def self.new_from_filename(filename)
     artist_name = filename.split(" - ")[0] 
      song_name = filename.split(" - ")[1] 
      song = Song.new(song_name) 

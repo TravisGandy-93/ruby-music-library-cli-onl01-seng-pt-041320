@@ -53,7 +53,7 @@ class Song
   end 
   
   def self.find_or_create_by_name(search)
-      self.find_by_name ? (search = find_create) : self.new(search)
+      self.find_by_name ? (search = find_create) : self.create(search)
   end 
 
   

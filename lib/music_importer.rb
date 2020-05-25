@@ -8,7 +8,7 @@ class MusicImporter
   def files
       Dir["#{path}/**/*.mp3"].map{|file| file.slice(path.size + 1..file.size)}
   end 
-  def import 
+  def self.import 
       self.files.each{|file| Song.new_by_filename(file)}
   end 
 

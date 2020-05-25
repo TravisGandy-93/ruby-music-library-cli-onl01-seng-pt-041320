@@ -6,7 +6,7 @@ class MusicImporter
   end 
   
   def files
-      Dir["#{path}/**/*.mp3"].map{|file| file.slice(path.size + 1..file.size)}
+      @files = Dir.entries(@path).select! {|f| f.include?('mp3')}
   end 
   
   def self.import 

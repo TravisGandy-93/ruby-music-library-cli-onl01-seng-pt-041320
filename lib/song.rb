@@ -56,5 +56,6 @@ class Song
       self.find_by_name(search) ? (search = self.find_by_name(search)) : self.create(search)
   end 
 
+  def 
   
 end 

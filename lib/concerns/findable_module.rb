@@ -1,10 +1,12 @@
 module Concerns::Findable
   # Module code here
-    def self.find_by_name(search)
-        self.all.find{|genre_or_artist| genre_or_artist.name == search}
+    def find_by_name(name)
+        self.all.detect{|a| a.name == name}
+    end
+
     end 
     
-    def self.find_or_create_by_name(search)
+    def find_or_create_by_name(search)
       self.find_by_name(search) ? (search = self.find_by_name(search)) : self.create(search)
     end 
 

@@ -61,6 +61,8 @@ class Song
 		genre = Genre.find_or_create_by_name(filename.split(" - ")[2].chomp(".mp3"))
 		song = new(filename.split(" - ")[1], artist, genre)
   end 
+  
+  def 
 
   
 end 

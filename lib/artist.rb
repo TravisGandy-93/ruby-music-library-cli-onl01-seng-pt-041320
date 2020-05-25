@@ -1,4 +1,5 @@
 class Artist
+  extend 
   attr_accessor :name, :songs
   
   @@all = []

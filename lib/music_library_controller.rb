@@ -46,4 +46,6 @@ class MusicLibraryController
       artists.each_with_index{|a, i| puts "#{i+1}. #{a.name}"}
   end
   
+  
+  
 end 
